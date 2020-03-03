@@ -1,0 +1,691 @@
+0:100  0:100  MemLog inited, TSC freq: 1801143850
+0:100  0:000  CPU was calibrated with RTC
+0:100  0:000  
+0:100  0:000  Now is 17.2.2019,  7:39:20 (GMT)
+0:100  0:000  Starting Clover revision: 4768 on Phoenix Technologies Ltd. EFI
+0:100  0:000  Build with: [Args: --x64-mcp --no-usb --ext-co -D NO_GRUB_DRIVERS_EMBEDDED | -D DISABLE_USB_SUPPORT -D NO_GRUB_DRIVERS_EMBEDDED -D USE_BIOS_BLOCKIO -D USE_LOW_EBDA -a X64 -b RELEASE -t XCODE8 -n 3 | OS: 10.13.5 | XCODE: 9.4.1]
+0:100  0:000  SelfDevicePath=PciRoot(0x0)\Pci(0x1C,0x0)\Pci(0x0,0x0)\NVMe(0x1,00-00-00-00-00-00-00-00)\HD(1,GPT,34D7E76F-7493-46F2-AB21-A6FD4D3AE0CC,0x800,0xFA000) @AA46E718
+0:100  0:000  SelfDirPath = \EFI\CLOVER
+0:100  0:000  === [ Get Smbios ] ========================================
+0:100  0:000  Type 16 Index = 0
+0:100  0:000  Total Memory Slots Count = 2
+0:100  0:000  Type 17 Index = 0
+0:100  0:000  SmbiosTable.Type17->Speed = 2400MHz
+0:100  0:000  SmbiosTable.Type17->Size = 8192MB
+0:100  0:000  SmbiosTable.Type17->Bank/Device = BANK 0 ChannelA-DIMM0
+0:100  0:000  SmbiosTable.Type17->Vendor = Kingston
+0:100  0:000  SmbiosTable.Type17->SerialNumber = 893C5D84
+0:100  0:000  SmbiosTable.Type17->PartNumber = 9905624-013.A00G    
+0:100  0:000  Type 17 Index = 1
+0:100  0:000  SmbiosTable.Type17->Speed = 2400MHz
+0:100  0:000  SmbiosTable.Type17->Size = 8192MB
+0:100  0:000  SmbiosTable.Type17->Bank/Device = BANK 2 ChannelB-DIMM0
+0:100  0:000  SmbiosTable.Type17->Vendor = 0000
+0:100  0:000  SmbiosTable.Type17->SerialNumber = 00000000
+0:100  0:000  SmbiosTable.Type17->PartNumber = MEM-DOWN            
+0:100  0:000  Boot status=0
+0:100  0:000  Running on: '15Z980-G.AA52C' with board '15Z980'
+0:100  0:000  === [ GetCPUProperties ] ==================================
+0:100  0:000  CPU Vendor = 756E6547 Model=806EA
+0:100  0:000   The CPU supported SSE4.1
+0:100  0:000  BrandString = Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz
+0:100  0:000   The CPU supported turbo
+0:100  0:000  MSR 0x35               40008
+0:100  0:000   TSC/CCC Information Leaf:
+0:100  0:000    numerator     : 150
+0:100  0:000    denominator   : 2
+0:100  0:000   Calibrated ARTFrequency: 24015251
+0:100  0:000  MSR 0xE2 before patch 1E008008
+0:100  0:000  MSR 0xE2 is locked, PM patches will be turned on
+0:100  0:000  MSR 0xCE              0004043D_F1011200
+0:100  0:000  corrected FLEX_RATIO = 0
+0:100  0:000  MSR 0x1B0             00000000
+0:100  0:000  FSBFrequency = 167 MHz, DMI FSBFrequency = 100 MHz, Corrected FSBFrequency = 100 MHz
+0:100  0:000  MaxDiv/MinDiv: 18.0/4
+0:100  0:000  Turbo: 34/34/34/34
+0:100  0:000  Features: 0xBFEBFBFF
+0:100  0:000  Threads: 8
+0:100  0:000  Cores: 4
+0:100  0:000  FSB: 100 MHz
+0:100  0:000  CPU: 3000 MHz
+0:100  0:000  TSC: 3000 MHz
+0:100  0:000  PIS: 100 MHz
+0:100  0:000  ExternalClock: 25 MHz
+0:100  0:000  === [ GetDevices ] ========================================
+0:100  0:000  PCI (00|00:00.00) : 8086 5914 class=060000
+0:100  0:000  PCI (00|00:02.00) : 8086 5917 class=030000
+0:100  0:000   - GFX: Model=Intel UHD Graphics 620 (Intel)
+0:100  0:000  PCI (00|00:04.00) : 8086 1903 class=118000
+0:100  0:000  PCI (00|00:14.00) : 8086 9D2F class=0C0330
+0:100  0:000  PCI (00|00:14.02) : 8086 9D31 class=118000
+0:100  0:000  PCI (00|00:15.00) : 8086 9D60 class=118000
+0:100  0:000  PCI (00|00:15.03) : 8086 9D63 class=118000
+0:100  0:000  PCI (00|00:16.00) : 8086 9D3A class=078000
+0:100  0:000  PCI (00|00:17.00) : 8086 9D03 class=010601
+0:100  0:000  PCI (00|00:1C.00) : 8086 9D14 class=060400
+0:100  0:000  PCI (00|01:00.00) : 8086 F1A6 class=010802
+0:100  0:000  PCI (00|00:1D.00) : 8086 9D1A class=060400
+0:100  0:000  PCI (00|02:00.00) : 10EC 522A class=FF0000
+0:100  0:000  PCI (00|00:1D.03) : 8086 9D1B class=060400
+0:101  0:000  PCI (00|03:00.00) : 8086 24FD class=028000
+0:101  0:000   - WIFI: Vendor=Intel
+0:101  0:000  PCI (00|00:1F.00) : 8086 9D4E class=060100
+0:101  0:000  PCI (00|00:1F.02) : 8086 9D21 class=058000
+0:101  0:000  PCI (00|00:1F.03) : 8086 9D71 class=040300
+0:101  0:000  PCI (00|00:1F.04) : 8086 9D23 class=0C0500
+0:101  0:000  === [ GetDefaultSettings ] ================================
+0:101  0:000  Clover load options size = 0 bytes
+0:104  0:003  EFI\CLOVER\config.plist loaded: Success
+0:104  0:000  === [ GetListOfThemes ] ===================================
+0:104  0:000  - [00]: bluemac
+0:105  0:000  === [ Found config plists ] ===============================
+0:105  0:000  - config.plist
+0:105  0:000  === [ GetEarlyUserSettings ] ==============================
+0:105  0:000  timeout set to -1
+0:105  0:000  Custom boot CUSTOM_BOOT_DISABLED (0x0)
+0:105  0:000  ForceKextsToLoad: 1 requested
+0:105  0:000   - [0]: System\Library\Extensions\IONetworkingFamily.kext
+0:105  0:000  KextsToPatch: 7 requested
+0:105  0:000   - [00]: AppleAHCIPort (External icons patch) :: BinPatch :: data len: 8
+0:105  0:000   - [01]: com.apple.iokit.IOAHCIBlockStorage (Enable TRIM for SSD) :: BinPatch :: data len: 11
+0:105  0:000   - [02]: com.apple.driver.usb.AppleUSBXHCI (USB 10.13.6 by PMHeart) :: MatchOS: 10.13.6 :: BinPatch :: data len: 8
+0:105  0:000   - [03]: com.apple.driver.usb.AppleUSBXHCI (disable port limit in XHCI kext (credit PMHeart)) :: MatchOS: 10.14.0 :: BinPatch :: data len: 9
+0:105  0:000   - [04]: com.apple.driver.usb.AppleUSBXHCI (disable port limit in XHCI kext (credit DalianSky,Ricky)) :: MatchOS: 10.14.1,10.14.2 :: BinPatch :: data len: 9
+0:105  0:000   - [05]: com.apple.driver.AppleIntelLpssI2C (Prevent Apple I2C kexts from attaching to I2C controllers, credit CoolStar) :: PlistPatch :: data len: 5
+0:105  0:000   - [06]: com.apple.driver.AppleIntelLpssI2CController (Prevent Apple I2C kexts from attaching to I2C controllers, credit CoolStar) :: PlistPatch :: data len: 5
+0:105  0:000  KernelToPatch: 3 requested
+0:105  0:000   - [00]: MSR 0xE2 _xcpm_idle instant reboot(c) Pike R. Alpha :: data len: 8
+0:105  0:000   - [01]: Disable panic kext logging on 10.13 release kernel (credit vit9696) :: MatchOS: 10.13.x :: data len: 6
+0:105  0:000   - [02]: Disable panic kext logging on 10.14 release kernel (credit vit9696) :: MatchOS: 10.14.x :: data len: 6
+0:105  0:000  Default theme: bluemac
+0:105  0:000  Hiding entries with string Preboot
+0:105  0:000  Hiding entries with string \EFI\BOOT\BOOTX64.EFI
+0:105  0:000  Hiding entries with string Windows
+0:105  0:000  Hiding entries with string Recovery
+0:105  0:000   Custom EDID is ok
+0:105  0:000  === [ LoadDrivers ] =======================================
+0:106  0:000  Loading ApfsDriverLoader-64.efi  status=Success
+0:109  0:003   - driver needs connecting
+0:109  0:000  Loading FSInject-64.efi  status=Success
+0:112  0:002  Loading HFSPlus.efi  status=Success
+0:115  0:003   - driver needs connecting
+0:115  0:000  Loading OsxAptioFixDrv-64.efi  status=Success
+0:118  0:002  Loading OsxFatBinaryDrv-64.efi  status=Success
+0:120  0:002  Loading PartitionDxe-64.efi  status=Success
+0:123  0:003   - driver needs connecting
+0:123  0:000  Loading SMCHelper-64.efi  status=Success
+0:126  0:002  Loading EmuVariableUefi-64.efi  status=Success
+0:129  0:002  EmuVariableUefi Initialize: VariableCommonInitialize = Success, orig services stored, install gEmuVariableControlProtocolGuid = Success
+0:129  0:000  3 drivers needs connecting ...
+0:129  0:000  PlatformDriverOverrideProtocol->GetDriver overriden
+0:129  0:000  Partition driver loaded: 
+0:129  0:000  HFS+ driver loaded
+0:129  0:000  APFS driver loaded
+0:129  0:000  Searching for invalid DiskIo BY_DRIVER connects: not found, all ok
+2:152  2:023  EmuVariable InstallEmulation: orig vars copied, emu.var.services installed, CreateEvent VirtualAddressChange = Success, CreateEvent ExitBootServices = Success, set Status=Success
+2:210  0:057  === [ InitScreen ] ========================================
+2:210  0:000  SetScreenResolution: 1920x1080 - already set
+2:210  0:000  Console modes reported: 5, available modes:
+2:210  0:000   - [01]: 80x25
+2:210  0:000   - [02]: 80x50
+2:210  0:000   - [03]: 128x40
+2:210  0:000   - [04]: 100x31
+2:210  0:000   - [05]: 240x56 (current mode)
+2:210  0:000  SetScreenResolution: 1920x1080 - already set
+2:210  0:000  reinit: self device path=PciRoot(0x0)\Pci(0x1C,0x0)\Pci(0x0,0x0)\NVMe(0x1,00-00-00-00-00-00-00-00)\HD(1,GPT,34D7E76F-7493-46F2-AB21-A6FD4D3AE0CC,0x800,0xFA000)
+2:210  0:000  === [ GetMacAddress ] =====================================
+2:210  0:000  === [ ScanSPD ] ===========================================
+2:211  0:000  SMBus device : 8086 9D23 class=0C0500 status=Success
+2:211  0:000  SMBus CmdReg: 0x1
+2:211  0:000  Scanning SMBus [8086:9D23], mmio: 0xD1337004, ioport: 0xEFA0, hostc: 0x11
+2:211  0:000  Slots to scan [8]...
+2:211  0:000  SPD[0]: Type 12 @0x50
+2:229  0:017  Not using XMP because it is not present
+2:229  0:000  DDR speed 2400MHz
+2:229  0:000  Slot: 0 Type 26 8192MB 2400MHz Vendor=Kingston PartNo=9905624-013.A00G SerialNo=0809030C050D0804
+2:230  0:001  === [ GetAcpiTablesList ] =================================
+2:230  0:000  Get Acpi Tables List from RSDT:
+2:230  0:000   - [00]: FACP  LGPC     len=268
+2:230  0:000   - [01]: SSDT  XnSsdt  len=16677
+2:230  0:000   - [02]: SSDT  Ther_Xnt len=1299
+2:230  0:000   - [03]: SSDT  FwiTable len=20064
+2:230  0:000   - [04]: SSDT  DptfTabl len=34423
+2:230  0:000   - [05]: SSDT  Tpm2Tabl len=1219
+2:230  0:000   - [06]: SSDT  MeSsdt  len=70
+2:230  0:000   - [07]: TPM2  LGPC     len=52
+2:230  0:000   - [08]: UEFI  LGPC     len=66
+2:230  0:000   - [09]: SSDT  SaSsdt  len=12560
+2:230  0:000   - [10]: HPET  LGPC     len=56
+2:230  0:000   - [11]: APIC  LGPC     len=300
+2:230  0:000   - [12]: MCFG  LGPC     len=60
+2:230  0:000   - [13]: SSDT  xh_rvp07 len=3790
+2:230  0:000   - [14]: BOOT  LGPC     len=40
+2:230  0:000   - [15]: BATB  LGPC     len=74
+2:230  0:000   - [16]: PMCT  LGPC     len=82
+2:230  0:000   - [17]: SSDT  CpuSsdt len=6062
+2:230  0:000   - [18]: SSDT  UsbCTabl len=4249
+2:230  0:000   - [19]: LPIT  LGPC     len=148
+2:230  0:000   - [20]: WSMT  LGPC     len=40
+2:230  0:000   - [21]: SSDT  HdaDsp len=321
+2:230  0:000   - [22]: SSDT  TbtTypeC len=1303
+2:230  0:000   - [23]: DBGP  LGPC     len=52
+2:230  0:000   - [24]: DBG2  LGPC     len=84
+2:230  0:000   - [25]: MSDM  LGPC     len=85
+2:230  0:000   - [26]: DMAR  LGPC     len=240
+2:230  0:000   - [27]: FPDT  LGPC     len=68
+2:230  0:000   - [28]: BGRT  LGPC     len=56
+2:230  0:000   - [29]: UEFI  LGPC     len=298
+2:230  0:000  Calibrated TSC Frequency = 1801143850 = 1801MHz
+2:230  0:000  === [ GetUserSettings ] ===================================
+2:230  0:000   Custom EDID is ok
+2:230  0:000  Can't install EdidOverride on ImageHandle
+2:230  0:000  Add 2 devices:
+2:230  0:000  USB FixOwnership: yes
+2:230  0:000   - final DSDT Fix mask=00000004
+2:230  0:000  PatchesDSDT: 8 requested
+2:230  0:000   - [00]: (change _DSM to XDSM) lenToFind: 4, lenToReplace: 4, Target Bridge: <null string>
+2:230  0:000   - [01]: (change HDAS to HDEF) lenToFind: 4, lenToReplace: 4, Target Bridge: <null string>
+2:230  0:000   - [02]: (change HECI to IMEI) lenToFind: 4, lenToReplace: 4, Target Bridge: <null string>
+2:230  0:000   - [03]: (change GFX0 to IGPU) lenToFind: 4, lenToReplace: 4, Target Bridge: <null string>
+2:230  0:000   - [04]: (change _OSI to XOSI) lenToFind: 4, lenToReplace: 4, Target Bridge: <null string>
+2:230  0:000   - [05]: (change _STA to XSTA in device GPI0 (TouchPad I2C)) lenToFind: 4, lenToReplace: 4, Target Bridge: GPI0
+2:230  0:000    patch disabled at config
+2:230  0:000   - [06]: (change _CRS to XCRS in device TPD0 (TouchPad I2C)) lenToFind: 4, lenToReplace: 4, Target Bridge: TPD0
+2:230  0:000    patch disabled at config
+2:230  0:000   - [07]: (Rename TPD0 to TPDX) lenToFind: 4, lenToReplace: 4, Target Bridge: <null string>
+2:230  0:000    patch disabled at config
+2:230  0:000  Using ProductName from config: MacBookPro13,1
+2:230  0:000  Using latest BiosVersion from clover
+2:230  0:000  BiosVersion: MBP131.88Z.F000.B00.1810301605
+2:230  0:000  BiosReleaseDate: 10/30/2018
+2:230  0:000  Using EfiVersion from clover: 228.0.0.0.0
+2:230  0:000  Using FirmwareFeatures from config: 0xFC0FE136
+2:230  0:000  Using FirmwareFeaturesMask from config: 0xFF1FFF3F
+2:230  0:000  Using PlatformFeature from clover: 0x1A
+2:230  0:000  Board-ID set from config as Mac-473D31EABEB93F9B
+2:230  0:000  BoardType: 0xA
+2:230  0:000  ChassisType: 0x9
+2:231  0:000  === [ Found DSDT tables ] =================================
+2:231  0:000  - DSDT.aml
+3:529  1:298  === [ ScanVolumes ] =======================================
+3:529  0:000  Found 14 volumes with blockIO
+3:529  0:000  - [00]: Volume: PciRoot(0x0)\Pci(0x1C,0x0)\Pci(0x0,0x0)\NVMe(0x1,00-00-00-00-00-00-00-00)
+3:529  0:000  - [01]: Volume: PciRoot(0x0)\Pci(0x1C,0x0)\Pci(0x0,0x0)\NVMe(0x1,00-00-00-00-00-00-00-00)\HD(1,GPT,34D7E76F-7493-46F2-AB21-A6FD4D3AE0CC,0x800,0xFA000)
+3:529  0:000          Result of bootcode detection: bootable Windows (vista,win)
+3:530  0:000          This is SelfVolume !!
+3:530  0:000  - [02]: Volume: PciRoot(0x0)\Pci(0x1C,0x0)\Pci(0x0,0x0)\NVMe(0x1,00-00-00-00-00-00-00-00)\HD(2,GPT,39FF04A0-3322-4147-2F2E-3A70F751C846,0xFB000,0x3B8E6288)
+3:530  0:000          Result of bootcode detection: bootable unknown (legacy)
+3:530  0:000  - [03]: Volume: PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x2,0x0,0x0)
+3:531  0:001  - [04]: Volume: PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x2,0x0,0x0)\HD(1,GPT,D4B004DC-29B7-4093-A5F6-83C521E6B786,0x800,0x82000)
+3:531  0:000          Result of bootcode detection: bootable Windows (vista,win)
+3:532  0:000  - [05]: Volume: PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x2,0x0,0x0)\HD(2,GPT,59BD1AE3-7637-4ADA-959E-862627A44C7F,0x82800,0x8000)
+3:532  0:000  - [06]: Volume: PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x2,0x0,0x0)\HD(3,GPT,A4C2F156-0DBB-4470-8F54-ADBDDF792C78,0x8A800,0x1B123000)
+3:532  0:000          Result of bootcode detection: bootable Windows (vista,win)
+3:532  0:000  - [07]: Volume: PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x2,0x0,0x0)\HD(4,GPT,5160CE14-B45A-4A66-BA62-2B9492C7C731,0x1B1AD800,0x1C2000)
+3:533  0:000          Result of bootcode detection: bootable Windows (vista,win)
+3:533  0:000  - [08]: Volume: PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x2,0x0,0x0)\HD(5,GPT,D828F0F2-F32B-4F3F-BBA1-FCEB5552F638,0x1B36F800,0x2825800)
+3:533  0:000          Result of bootcode detection: bootable Windows (vista,win)
+3:533  0:000  - [09]: Volume: PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x2,0x0,0x0)\HD(6,GPT,2674DD77-45B5-44AA-82BE-D3352DDEC1A9,0x1DB95000,0x15E000)
+3:533  0:000          Result of bootcode detection: bootable Windows (vista,win)
+3:534  0:000  - [10]: Volume: PciRoot(0x0)\Pci(0x1C,0x0)\Pci(0x0,0x0)\NVMe(0x1,00-00-00-00-00-00-00-00)\HD(2,GPT,39FF04A0-3322-4147-2F2E-3A70F751C846,0xFB000,0x3B8E6288)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,E058E04068C50B4AA0EDEE98EC58FBF3)
+3:534  0:000          hiding this volume
+3:534  0:000  - [11]: Volume: PciRoot(0x0)\Pci(0x1C,0x0)\Pci(0x0,0x0)\NVMe(0x1,00-00-00-00-00-00-00-00)\HD(2,GPT,39FF04A0-3322-4147-2F2E-3A70F751C846,0xFB000,0x3B8E6288)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,01074372EBE79F368C5BDE30F8683753)
+3:534  0:000  - [12]: Volume: PciRoot(0x0)\Pci(0x1C,0x0)\Pci(0x0,0x0)\NVMe(0x1,00-00-00-00-00-00-00-00)\HD(2,GPT,39FF04A0-3322-4147-2F2E-3A70F751C846,0xFB000,0x3B8E6288)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,C16F32209FE14E4793821508AADBA9EA)
+3:534  0:000          hiding this volume
+3:534  0:000  - [13]: Volume: PciRoot(0x0)\Pci(0x1C,0x0)\Pci(0x0,0x0)\NVMe(0x1,00-00-00-00-00-00-00-00)\HD(2,GPT,39FF04A0-3322-4147-2F2E-3A70F751C846,0xFB000,0x3B8E6288)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,8243DDF640A27C4C8904903B6502477C)
+3:536  0:002  PutNvramPlistToRtVars: nvram.plist not found
+3:536  0:000  === [ InitTheme ] =========================================
+3:545  0:009  Using theme 'bluemac' (EFI\CLOVER\themes\bluemac)
+3:545  0:000  OS main and drive as badge
+3:547  0:001  Loading font from ThemeDir: Success
+3:547  0:000  theme inited
+3:547  0:000  Chosen theme bluemac
+3:547  0:000  after NVRAM boot-args=dart=0 -igfxnohdmi lilucpu=9 -cdfon -v -gux_defer_usb2 kext-dev-mode=1
+3:547  0:000  === [ Dump SMC keys from NVRAM ] ==========================
+3:547  0:000  found AppleSMC protocol
+3:548  0:000  Registered 17 SMC keys
+3:548  0:000  === [ AddCustomEntries ] ==================================
+3:548  0:000  Custom entry 0 Title:"Recovery" Path:"\com.apple.recovery.boot\boot.efi" Type:10 Flags:0x6 matching all volumes
+3:548  0:000      Checking volume "EFI" (PciRoot(0x0)\Pci(0x1C,0x0)\Pci(0x0,0x0)\NVMe(0x1,00-00-00-00-00-00-00-00)\HD(1,GPT,34D7E76F-7493-46F2-AB21-A6FD4D3AE0CC,0x800,0xFA000)) ... skipped because path does not exist
+3:548  0:000      Checking volume "SYSTEM" (PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x2,0x0,0x0)\HD(1,GPT,D4B004DC-29B7-4093-A5F6-83C521E6B786,0x800,0x82000)) ... skipped because path does not exist
+3:548  0:000      Checking volume "LGEFI" (PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x2,0x0,0x0)\HD(6,GPT,2674DD77-45B5-44AA-82BE-D3352DDEC1A9,0x1DB95000,0x15E000)) ... skipped because path does not exist
+3:548  0:000      Checking volume "Preboot" (PciRoot(0x0)\Pci(0x1C,0x0)\Pci(0x0,0x0)\NVMe(0x1,00-00-00-00-00-00-00-00)\HD(2,GPT,39FF04A0-3322-4147-2F2E-3A70F751C846,0xFB000,0x3B8E6288)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,E058E04068C50B4AA0EDEE98EC58FBF3)) ... skipped because volume is hidden
+3:548  0:000      Checking volume "macOS" (PciRoot(0x0)\Pci(0x1C,0x0)\Pci(0x0,0x0)\NVMe(0x1,00-00-00-00-00-00-00-00)\HD(2,GPT,39FF04A0-3322-4147-2F2E-3A70F751C846,0xFB000,0x3B8E6288)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,01074372EBE79F368C5BDE30F8683753)) ... skipped because path does not exist
+3:549  0:001      Checking volume "Recovery" (PciRoot(0x0)\Pci(0x1C,0x0)\Pci(0x0,0x0)\NVMe(0x1,00-00-00-00-00-00-00-00)\HD(2,GPT,39FF04A0-3322-4147-2F2E-3A70F751C846,0xFB000,0x3B8E6288)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,C16F32209FE14E4793821508AADBA9EA)) ... skipped because volume is hidden
+3:549  0:000      Checking volume "VM" (PciRoot(0x0)\Pci(0x1C,0x0)\Pci(0x0,0x0)\NVMe(0x1,00-00-00-00-00-00-00-00)\HD(2,GPT,39FF04A0-3322-4147-2F2E-3A70F751C846,0xFB000,0x3B8E6288)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,8243DDF640A27C4C8904903B6502477C)) ... skipped because path does not exist
+3:549  0:000  Custom entry 1 Title:"Windows" Path:"\EFI\Microsoft\Boot\bootmgfw.efi" Options:"-s -h" Type:7 Flags:0x0 matching all volumes
+3:549  0:000      Checking volume "EFI" (PciRoot(0x0)\Pci(0x1C,0x0)\Pci(0x0,0x0)\NVMe(0x1,00-00-00-00-00-00-00-00)\HD(1,GPT,34D7E76F-7493-46F2-AB21-A6FD4D3AE0CC,0x800,0xFA000)) ... skipped because path does not exist
+3:549  0:000      Checking volume "SYSTEM" (PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x2,0x0,0x0)\HD(1,GPT,D4B004DC-29B7-4093-A5F6-83C521E6B786,0x800,0x82000)) ... match!
+3:551  0:001  Custom settings: <null string>.plist will  be applied
+3:551  0:000      Checking volume "LGEFI" (PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x2,0x0,0x0)\HD(6,GPT,2674DD77-45B5-44AA-82BE-D3352DDEC1A9,0x1DB95000,0x15E000)) ... skipped because path does not exist
+3:552  0:000      Checking volume "Preboot" (PciRoot(0x0)\Pci(0x1C,0x0)\Pci(0x0,0x0)\NVMe(0x1,00-00-00-00-00-00-00-00)\HD(2,GPT,39FF04A0-3322-4147-2F2E-3A70F751C846,0xFB000,0x3B8E6288)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,E058E04068C50B4AA0EDEE98EC58FBF3)) ... skipped because volume is hidden
+3:552  0:000      Checking volume "macOS" (PciRoot(0x0)\Pci(0x1C,0x0)\Pci(0x0,0x0)\NVMe(0x1,00-00-00-00-00-00-00-00)\HD(2,GPT,39FF04A0-3322-4147-2F2E-3A70F751C846,0xFB000,0x3B8E6288)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,01074372EBE79F368C5BDE30F8683753)) ... skipped because path does not exist
+3:553  0:001      Checking volume "Recovery" (PciRoot(0x0)\Pci(0x1C,0x0)\Pci(0x0,0x0)\NVMe(0x1,00-00-00-00-00-00-00-00)\HD(2,GPT,39FF04A0-3322-4147-2F2E-3A70F751C846,0xFB000,0x3B8E6288)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,C16F32209FE14E4793821508AADBA9EA)) ... skipped because volume is hidden
+3:553  0:000      Checking volume "VM" (PciRoot(0x0)\Pci(0x1C,0x0)\Pci(0x0,0x0)\NVMe(0x1,00-00-00-00-00-00-00-00)\HD(2,GPT,39FF04A0-3322-4147-2F2E-3A70F751C846,0xFB000,0x3B8E6288)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,8243DDF640A27C4C8904903B6502477C)) ... skipped because path does not exist
+3:553  0:000  === [ ScanLoader ] ========================================
+3:553  0:000  - [01]: 'EFI'
+3:553  0:000          AddLoaderEntry for Volume Name=EFI
+3:553  0:000          skipped because entry is hidden
+3:553  0:000  - [04]: 'SYSTEM'
+3:553  0:000          AddLoaderEntry for Volume Name=SYSTEM
+3:553  0:000       skipped because path `PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x2,0x0,0x0)\HD(1,GPT,D4B004DC-29B7-4093-A5F6-83C521E6B786,0x800,0x82000)\EFI\microsoft\Boot\bootmgfw.efii` already exists for another entry!
+3:553  0:000          AddLoaderEntry for Volume Name=SYSTEM
+3:553  0:000          skipped because entry is hidden
+3:553  0:000  - [09]: 'LGEFI'
+3:553  0:000          AddLoaderEntry for Volume Name=LGEFI
+3:553  0:000          skipped because entry is hidden
+3:553  0:000  - [10]: 'Preboot', hidden
+3:553  0:000  - [11]: 'macOS'
+3:630  0:076          AddLoaderEntry for Volume Name=macOS
+3:649  0:018      Check if volume Is Hibernated:
+3:649  0:000      Check sleep image 'by signature':
+3:674  0:025      read prefs \Library\Preferences\com.apple.PowerManagement.plist status=Success
+3:674  0:000      using default sleep image name = \private\var\vm\sleepimage
+3:688  0:014      sleepimage not found -> Not Found
+3:688  0:000      hibernated: no - sign
+3:689  0:000          [!] Icon 18 (icons\vol_internal_apfs.icns) not found (path: EFI\CLOVER\themes\bluemac)
+3:700  0:011  - [12]: 'Recovery', hidden
+3:700  0:000  - [13]: 'VM'
+3:700  0:000  === [ AddCustomTool ] =====================================
+3:701  0:000  EmuVariable InstallEmulation: EFI_ALREADY_STARTED
+3:701  0:000  === [ GetEfiBootDeviceFromNvram ] =========================
+3:701  0:000   - found entry 1. 'Boot macOS from macOS', Volume 'macOS', DevicePath 'PciRoot(0x0)\Pci(0x1C,0x0)\Pci(0x0,0x0)\NVMe(0x1,00-00-00-00-00-00-00-00)\HD(2,GPT,39FF04A0-3322-4147-2F2E-3A70F751C846,0xFB000,0x3B8E6288)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,01074372EBE79F368C5BDE30F8683753)\System\Library\CoreServices\boot.efii'
+3:701  0:000  EmuVariable UninstallEmulation: CloseEvent = Success, original var services restored
+3:701  0:000  DefaultIndex=1 and MainMenu.EntryCount=6
+3:773  0:072  draw text Boot macOS from macOS
+3:773  0:000  pos=960 width=210 xtext=855 Height=22 Y=672
+3:773  0:000  draw text F1:Help
+3:773  0:000  pos=5 width=70 xtext=5 Height=22 Y=1053
+3:775  0:001  draw text 4768
+3:775  0:000  pos=1915 width=40 xtext=1875 Height=22 Y=1053
+3:775  0:000  GUI ready
+7:568  3:793  Found BIOS RSDP at F0140
+7:568  0:000  Printing ACPI tables from RSDP F0140 ...
+7:568  0:000   F0140: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36
+7:568  0:000    (Xsdt: AFFA8188, Rsdt: AFFA80C4)
+7:568  0:000    AFFA8188: 'XSDT', 'LGPC', Rev: 1, Len: 276
+7:568  0:000    AFFA80C4: 'RSDT', 'LGPC', Rev: 1, Len: 156
+7:568  0:000    Tables in Xsdt: 30
+7:568  0:000    0. AFFE0000: 'FACP', 'LGPC', Rev: 5, Len: 268
+7:568  0:000        (Dsdt: AFFB4000, Facs: AFE1B000, XDsdt: AFFB4000, XFacs: 0)
+7:568  0:000        AFFB4000: 'DSDT', 'LGPC', Rev: 2, Len: 167230
+7:571  0:002        AFE1B000: 'FACS', Ver: 2, Len: 64
+7:571  0:000    1. AFFF7000: 'SSDT', 'XnSsdt', Rev: 2, Len: 16677
+7:571  0:000    2. AFFF6000: 'SSDT', 'Ther_Xnt', Rev: 2, Len: 1299
+7:571  0:000    3. AFFF1000: 'SSDT', 'FwiTable', Rev: 1, Len: 20064
+7:571  0:000    4. AFFE8000: 'SSDT', 'DptfTabl', Rev: 2, Len: 34423
+7:571  0:000    5. AFFE7000: 'SSDT', 'Tpm2Tabl', Rev: 2, Len: 1219
+7:571  0:000    6. AFFE6000: 'SSDT', 'MeSsdt', Rev: 2, Len: 70
+7:571  0:000    7. AFFE5000: 'TPM2', 'LGPC', Rev: 4, Len: 52
+7:571  0:000    8. AFE30000: 'UEFI', 'LGPC', Rev: 1, Len: 66
+7:571  0:000    9. AFFE1000: 'SSDT', 'SaSsdt', Rev: 2, Len: 12560
+7:571  0:000    10. AFFDF000: 'HPET', 'LGPC', Rev: 1, Len: 56
+7:571  0:000    11. AFFDE000: 'APIC', 'LGPC', Rev: 3, Len: 300
+7:571  0:000    12. AFFDD000: 'MCFG', 'LGPC', Rev: 1, Len: 60
+7:571  0:000    13. AFFB3000: 'SSDT', 'xh_rvp07', Rev: 2, Len: 3790
+7:571  0:000    14. AFFB2000: 'BOOT', 'LGPC', Rev: 1, Len: 40
+7:571  0:000    15. AFFB1000: 'BATB', 'LGPC', Rev: 2, Len: 74
+7:571  0:000    16. AFFAF000: 'PMCT', 'LGPC', Rev: 1, Len: 82
+7:571  0:000    17. AFFAD000: 'SSDT', 'CpuSsdt', Rev: 2, Len: 6062
+7:571  0:000    18. AFFAB000: 'SSDT', 'UsbCTabl', Rev: 2, Len: 4249
+7:571  0:000    19. AFFAA000: 'LPIT', 'LGPC', Rev: 1, Len: 148
+7:571  0:000    20. AFFA9000: 'WSMT', 'LGPC', Rev: 1, Len: 40
+7:571  0:000    21. AFFFC000: 'SSDT', 'HdaDsp', Rev: 2, Len: 321
+7:571  0:000    22. AFFA7000: 'SSDT', 'TbtTypeC', Rev: 2, Len: 1303
+7:571  0:000    23. AFFA6000: 'DBGP', 'LGPC', Rev: 1, Len: 52
+7:571  0:000    24. AFFA5000: 'DBG2', 'LGPC', Rev: 0, Len: 84
+7:571  0:000    25. AFFA4000: 'MSDM', 'LGPC', Rev: 3, Len: 85
+7:571  0:000    26. AFFA3000: 'DMAR', 'LGPC', Rev: 1, Len: 240
+7:571  0:000    27. AFFA2000: 'FPDT', 'LGPC', Rev: 1, Len: 68
+7:571  0:000    28. AFFA1000: 'BGRT', 'LGPC', Rev: 1, Len: 56
+7:571  0:000    29. AFE16000: 'UEFI', 'LGPC', Rev: 1, Len: 298
+7:571  0:000    Tables in Rsdt: 30
+7:571  0:000    0. AFFE0000: 'FACP', 'LGPC', Rev: 5, Len: 268
+7:571  0:000        (Dsdt: AFFB4000, Facs: AFE1B000, XDsdt: AFFB4000, XFacs: 0)
+7:571  0:000        AFFB4000: 'DSDT', 'LGPC', Rev: 2, Len: 167230
+7:574  0:002        AFE1B000: 'FACS', Ver: 2, Len: 64
+7:574  0:000    1. AFFF7000: 'SSDT', 'XnSsdt', Rev: 2, Len: 16677
+7:574  0:000    2. AFFF6000: 'SSDT', 'Ther_Xnt', Rev: 2, Len: 1299
+7:574  0:000    3. AFFF1000: 'SSDT', 'FwiTable', Rev: 1, Len: 20064
+7:574  0:000    4. AFFE8000: 'SSDT', 'DptfTabl', Rev: 2, Len: 34423
+7:574  0:000    5. AFFE7000: 'SSDT', 'Tpm2Tabl', Rev: 2, Len: 1219
+7:574  0:000    6. AFFE6000: 'SSDT', 'MeSsdt', Rev: 2, Len: 70
+7:574  0:000    7. AFFE5000: 'TPM2', 'LGPC', Rev: 4, Len: 52
+7:574  0:000    8. AFE30000: 'UEFI', 'LGPC', Rev: 1, Len: 66
+7:574  0:000    9. AFFE1000: 'SSDT', 'SaSsdt', Rev: 2, Len: 12560
+7:574  0:000    10. AFFDF000: 'HPET', 'LGPC', Rev: 1, Len: 56
+7:574  0:000    11. AFFDE000: 'APIC', 'LGPC', Rev: 3, Len: 300
+7:574  0:000    12. AFFDD000: 'MCFG', 'LGPC', Rev: 1, Len: 60
+7:574  0:000    13. AFFB3000: 'SSDT', 'xh_rvp07', Rev: 2, Len: 3790
+7:574  0:000    14. AFFB2000: 'BOOT', 'LGPC', Rev: 1, Len: 40
+7:574  0:000    15. AFFB1000: 'BATB', 'LGPC', Rev: 2, Len: 74
+7:574  0:000    16. AFFAF000: 'PMCT', 'LGPC', Rev: 1, Len: 82
+7:574  0:000    17. AFFAD000: 'SSDT', 'CpuSsdt', Rev: 2, Len: 6062
+7:574  0:000    18. AFFAB000: 'SSDT', 'UsbCTabl', Rev: 2, Len: 4249
+7:574  0:000    19. AFFAA000: 'LPIT', 'LGPC', Rev: 1, Len: 148
+7:574  0:000    20. AFFA9000: 'WSMT', 'LGPC', Rev: 1, Len: 40
+7:574  0:000    21. AFFFC000: 'SSDT', 'HdaDsp', Rev: 2, Len: 321
+7:574  0:000    22. AFFA7000: 'SSDT', 'TbtTypeC', Rev: 2, Len: 1303
+7:574  0:000    23. AFFA6000: 'DBGP', 'LGPC', Rev: 1, Len: 52
+7:574  0:000    24. AFFA5000: 'DBG2', 'LGPC', Rev: 0, Len: 84
+7:574  0:000    25. AFFA4000: 'MSDM', 'LGPC', Rev: 3, Len: 85
+7:574  0:000    26. AFFA3000: 'DMAR', 'LGPC', Rev: 1, Len: 240
+7:574  0:000    27. AFFA2000: 'FPDT', 'LGPC', Rev: 1, Len: 68
+7:574  0:000    28. AFFA1000: 'BGRT', 'LGPC', Rev: 1, Len: 56
+7:574  0:000    29. AFE16000: 'UEFI', 'LGPC', Rev: 1, Len: 298
+7:574  0:000  Found UEFI Acpi 2.0 RSDP at AFFFD014
+7:574  0:000  Saving ACPI tables from RSDP AFFFD014 to EFI\CLOVER\ACPI\origin ...
+7:574  0:000   AFFFD014: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36 -> RSDP.aml
+7:581  0:007    (Xsdt: AFFA8188, Rsdt: AFFA80C4)
+7:581  0:000    AFFA8188: 'XSDT', 'LGPC', Rev: 1, Len: 276 -> XSDT.aml
+7:588  0:007    AFFA80C4: 'RSDT', 'LGPC', Rev: 1, Len: 156 -> RSDT.aml
+7:595  0:006    Tables in Xsdt: 30
+7:595  0:000    0. AFFE0000: 'FACP', 'LGPC', Rev: 5, Len: 268 -> FACP.aml
+7:601  0:006        (Dsdt: AFFB4000, Facs: AFE1B000, XDsdt: AFFB4000, XFacs: 0)
+7:601  0:000        AFFB4000: 'DSDT', 'LGPC', Rev: 2, Len: 167230 -> DSDT.aml
+7:612  0:010        AFE1B000: 'FACS', Ver: 2, Len: 64 -> FACS.aml
+7:619  0:006    1. AFFF7000: 'SSDT', 'XnSsdt', Rev: 2, Len: 16677 -> SSDT-0-XnSsdt.aml
+7:627  0:007    2. AFFF6000: 'SSDT', 'Ther_Xnt', Rev: 2, Len: 1299 -> SSDT-1-Ther_Xnt.aml
+7:634  0:007    3. AFFF1000: 'SSDT', 'FwiTable', Rev: 1, Len: 20064 -> SSDT-2-FwiTable.aml
+7:641  0:007    4. AFFE8000: 'SSDT', 'DptfTabl', Rev: 2, Len: 34423 -> SSDT-3-DptfTabl.aml
+7:649  0:007    5. AFFE7000: 'SSDT', 'Tpm2Tabl', Rev: 2, Len: 1219 -> SSDT-4-Tpm2Tabl.aml
+7:656  0:006    6. AFFE6000: 'SSDT', 'MeSsdt', Rev: 2, Len: 70 -> SSDT-5-MeSsdt.aml
+7:662  0:006    7. AFFE5000: 'TPM2', 'LGPC', Rev: 4, Len: 52 -> TPM2.aml
+7:669  0:006    8. AFE30000: 'UEFI', 'LGPC', Rev: 1, Len: 66 -> UEFI.aml
+7:676  0:007    9. AFFE1000: 'SSDT', 'SaSsdt', Rev: 2, Len: 12560 -> SSDT-6-SaSsdt.aml
+7:685  0:008    10. AFFDF000: 'HPET', 'LGPC', Rev: 1, Len: 56 -> HPET.aml
+7:692  0:007    11. AFFDE000: 'APIC', 'LGPC', Rev: 3, Len: 300 -> APIC.aml
+7:699  0:006    12. AFFDD000: 'MCFG', 'LGPC', Rev: 1, Len: 60 -> MCFG.aml
+7:705  0:006    13. AFFB3000: 'SSDT', 'xh_rvp07', Rev: 2, Len: 3790 -> SSDT-7-xh_rvp07.aml
+7:712  0:006    14. AFFB2000: 'BOOT', 'LGPC', Rev: 1, Len: 40 -> BOOT.aml
+7:719  0:006    15. AFFB1000: 'BATB', 'LGPC', Rev: 2, Len: 74 -> BATB.aml
+7:727  0:007    16. AFFAF000: 'PMCT', 'LGPC', Rev: 1, Len: 82 -> PMCT.aml
+7:734  0:007    17. AFFAD000: 'SSDT', 'CpuSsdt', Rev: 2, Len: 6062 -> SSDT-8-CpuSsdt.aml (Found hidden SSDT 7 pcs)
+7:741  0:007        * AFDF0098: 'SSDT', 'Cpu0Ist', Rev: 2, Len: 1419  53 53 44 54 8B 05 00 00 02 63 50 6D 52 65 66 00 Internal length = 1419 -> SSDT-x8_0-Cpu0Ist.aml
+7:748  0:006        * AFD86018: 'SSDT', 'ApIst', Rev: 2, Len: 3348  53 53 44 54 14 0D 00 00 02 2A 50 6D 52 65 66 00 Internal length = 3348 -> SSDT-x8_1-ApIst.aml
+7:755  0:006        * AFD87698: 'SSDT', 'Cpu0Cst', Rev: 2, Len: 1272  53 53 44 54 F8 04 00 00 02 B9 50 6D 52 65 66 00 Internal length = 1272 -> SSDT-x8_2-Cpu0Cst.aml
+7:761  0:006        * AFDF0B18: 'SSDT', 'ApCst', Rev: 2, Len: 778  53 53 44 54 0A 03 00 00 02 93 50 6D 52 65 66 00 Internal length = 778 -> SSDT-x8_3-ApCst.aml
+7:769  0:007        * AFDF0718: 'SSDT', 'Cpu0Hwp', Rev: 2, Len: 186  53 53 44 54 BA 00 00 00 02 7D 50 6D 52 65 66 00 Internal length = 186 -> SSDT-x8_4-Cpu0Hwp.aml
+7:776  0:006        * AFD85018: 'SSDT', 'ApHwp', Rev: 2, Len: 791  53 53 44 54 17 03 00 00 02 80 50 6D 52 65 66 00 Internal length = 791 -> SSDT-x8_5-ApHwp.aml
+7:782  0:006        * AFD87018: 'SSDT', 'HwpLvt', Rev: 2, Len: 1576  53 53 44 54 28 06 00 00 02 85 50 6D 52 65 66 00 Internal length = 1576 -> SSDT-x8_6-HwpLvt.aml
+7:790  0:007  
+7:790  0:000    18. AFFAB000: 'SSDT', 'UsbCTabl', Rev: 2, Len: 4249 -> SSDT-9-UsbCTabl.aml
+7:796  0:006    19. AFFAA000: 'LPIT', 'LGPC', Rev: 1, Len: 148 -> LPIT.aml
+7:804  0:007    20. AFFA9000: 'WSMT', 'LGPC', Rev: 1, Len: 40 -> WSMT.aml
+7:811  0:007    21. AFFFC000: 'SSDT', 'HdaDsp', Rev: 2, Len: 321 -> SSDT-10-HdaDsp.aml
+7:817  0:006    22. AFFA7000: 'SSDT', 'TbtTypeC', Rev: 2, Len: 1303 -> SSDT-11-TbtTypeC.aml
+7:824  0:006    23. AFFA6000: 'DBGP', 'LGPC', Rev: 1, Len: 52 -> DBGP.aml
+7:831  0:006    24. AFFA5000: 'DBG2', 'LGPC', Rev: 0, Len: 84 -> DBG2.aml
+7:838  0:006    25. AFFA4000: 'MSDM', 'LGPC', Rev: 3, Len: 85 -> MSDM.aml
+7:845  0:007    26. AFFA3000: 'DMAR', 'LGPC', Rev: 1, Len: 240 -> DMAR.aml
+7:852  0:007    27. AFFA2000: 'FPDT', 'LGPC', Rev: 1, Len: 68 -> FPDT.aml
+7:859  0:006    28. AFFA1000: 'BGRT', 'LGPC', Rev: 1, Len: 56 -> BGRT.aml
+7:866  0:006    29. AFE16000: 'UEFI', 'LGPC', Rev: 1, Len: 298 -> UEFI.aml
+7:873  0:007    Tables in Rsdt: 30
+7:873  0:000    0. AFFE0000: 'FACP', 'LGPC', Rev: 5, Len: 268
+7:873  0:000        (Dsdt: AFFB4000, Facs: AFE1B000, XDsdt: AFFB4000, XFacs: 0)
+7:873  0:000        AFFB4000: 'DSDT', 'LGPC', Rev: 2, Len: 167230
+7:876  0:002        AFE1B000: 'FACS', Ver: 2, Len: 64
+7:876  0:000    1. AFFF7000: 'SSDT', 'XnSsdt', Rev: 2, Len: 16677
+7:876  0:000    2. AFFF6000: 'SSDT', 'Ther_Xnt', Rev: 2, Len: 1299
+7:876  0:000    3. AFFF1000: 'SSDT', 'FwiTable', Rev: 1, Len: 20064
+7:876  0:000    4. AFFE8000: 'SSDT', 'DptfTabl', Rev: 2, Len: 34423
+7:876  0:000    5. AFFE7000: 'SSDT', 'Tpm2Tabl', Rev: 2, Len: 1219
+7:876  0:000    6. AFFE6000: 'SSDT', 'MeSsdt', Rev: 2, Len: 70
+7:876  0:000    7. AFFE5000: 'TPM2', 'LGPC', Rev: 4, Len: 52
+7:876  0:000    8. AFE30000: 'UEFI', 'LGPC', Rev: 1, Len: 66
+7:876  0:000    9. AFFE1000: 'SSDT', 'SaSsdt', Rev: 2, Len: 12560
+7:876  0:000    10. AFFDF000: 'HPET', 'LGPC', Rev: 1, Len: 56
+7:876  0:000    11. AFFDE000: 'APIC', 'LGPC', Rev: 3, Len: 300
+7:876  0:000    12. AFFDD000: 'MCFG', 'LGPC', Rev: 1, Len: 60
+7:876  0:000    13. AFFB3000: 'SSDT', 'xh_rvp07', Rev: 2, Len: 3790
+7:876  0:000    14. AFFB2000: 'BOOT', 'LGPC', Rev: 1, Len: 40
+7:876  0:000    15. AFFB1000: 'BATB', 'LGPC', Rev: 2, Len: 74
+7:876  0:000    16. AFFAF000: 'PMCT', 'LGPC', Rev: 1, Len: 82
+7:876  0:000    17. AFFAD000: 'SSDT', 'CpuSsdt', Rev: 2, Len: 6062
+7:876  0:000    18. AFFAB000: 'SSDT', 'UsbCTabl', Rev: 2, Len: 4249
+7:876  0:000    19. AFFAA000: 'LPIT', 'LGPC', Rev: 1, Len: 148
+7:876  0:000    20. AFFA9000: 'WSMT', 'LGPC', Rev: 1, Len: 40
+7:876  0:000    21. AFFFC000: 'SSDT', 'HdaDsp', Rev: 2, Len: 321
+7:876  0:000    22. AFFA7000: 'SSDT', 'TbtTypeC', Rev: 2, Len: 1303
+7:876  0:000    23. AFFA6000: 'DBGP', 'LGPC', Rev: 1, Len: 52
+7:876  0:000    24. AFFA5000: 'DBG2', 'LGPC', Rev: 0, Len: 84
+7:876  0:000    25. AFFA4000: 'MSDM', 'LGPC', Rev: 3, Len: 85
+7:876  0:000    26. AFFA3000: 'DMAR', 'LGPC', Rev: 1, Len: 240
+7:876  0:000    27. AFFA2000: 'FPDT', 'LGPC', Rev: 1, Len: 68
+7:876  0:000    28. AFFA1000: 'BGRT', 'LGPC', Rev: 1, Len: 56
+7:876  0:000    29. AFE16000: 'UEFI', 'LGPC', Rev: 1, Len: 298
+7:876  0:000  Found UEFI Acpi 1.0 RSDP at AFFFD000
+7:876  0:000  Printing ACPI tables from RSDP AFFFD000 ...
+7:876  0:000   AFFFD000: 'RSD PTR ', Rev: 0 (Acpi 1.0), Len: 20
+7:876  0:000    (Rsdt: AFFA8000)
+7:876  0:000    AFFA8000: 'RSDT', 'LGPC', Rev: 1, Len: 156
+7:876  0:000    Tables in Rsdt: 30
+7:876  0:000    0. AFFE0000: 'FACP', 'LGPC', Rev: 5, Len: 268
+7:876  0:000        (Dsdt: AFFB4000, Facs: AFE1B000, XDsdt: AFFB4000, XFacs: 0)
+7:876  0:000        AFFB4000: 'DSDT', 'LGPC', Rev: 2, Len: 167230
+7:879  0:002        AFE1B000: 'FACS', Ver: 2, Len: 64
+7:879  0:000    1. AFFF7000: 'SSDT', 'XnSsdt', Rev: 2, Len: 16677
+7:879  0:000    2. AFFF6000: 'SSDT', 'Ther_Xnt', Rev: 2, Len: 1299
+7:879  0:000    3. AFFF1000: 'SSDT', 'FwiTable', Rev: 1, Len: 20064
+7:879  0:000    4. AFFE8000: 'SSDT', 'DptfTabl', Rev: 2, Len: 34423
+7:879  0:000    5. AFFE7000: 'SSDT', 'Tpm2Tabl', Rev: 2, Len: 1219
+7:879  0:000    6. AFFE6000: 'SSDT', 'MeSsdt', Rev: 2, Len: 70
+7:879  0:000    7. AFFE5000: 'TPM2', 'LGPC', Rev: 4, Len: 52
+7:879  0:000    8. AFE30000: 'UEFI', 'LGPC', Rev: 1, Len: 66
+7:879  0:000    9. AFFE1000: 'SSDT', 'SaSsdt', Rev: 2, Len: 12560
+7:879  0:000    10. AFFDF000: 'HPET', 'LGPC', Rev: 1, Len: 56
+7:879  0:000    11. AFFDE000: 'APIC', 'LGPC', Rev: 3, Len: 300
+7:879  0:000    12. AFFDD000: 'MCFG', 'LGPC', Rev: 1, Len: 60
+7:879  0:000    13. AFFB3000: 'SSDT', 'xh_rvp07', Rev: 2, Len: 3790
+7:879  0:000    14. AFFB2000: 'BOOT', 'LGPC', Rev: 1, Len: 40
+7:879  0:000    15. AFFB1000: 'BATB', 'LGPC', Rev: 2, Len: 74
+7:879  0:000    16. AFFAF000: 'PMCT', 'LGPC', Rev: 1, Len: 82
+7:879  0:000    17. AFFAD000: 'SSDT', 'CpuSsdt', Rev: 2, Len: 6062
+7:879  0:000    18. AFFAB000: 'SSDT', 'UsbCTabl', Rev: 2, Len: 4249
+7:879  0:000    19. AFFAA000: 'LPIT', 'LGPC', Rev: 1, Len: 148
+7:879  0:000    20. AFFA9000: 'WSMT', 'LGPC', Rev: 1, Len: 40
+7:879  0:000    21. AFFFC000: 'SSDT', 'HdaDsp', Rev: 2, Len: 321
+7:879  0:000    22. AFFA7000: 'SSDT', 'TbtTypeC', Rev: 2, Len: 1303
+7:879  0:000    23. AFFA6000: 'DBGP', 'LGPC', Rev: 1, Len: 52
+7:879  0:000    24. AFFA5000: 'DBG2', 'LGPC', Rev: 0, Len: 84
+7:879  0:000    25. AFFA4000: 'MSDM', 'LGPC', Rev: 3, Len: 85
+7:879  0:000    26. AFFA3000: 'DMAR', 'LGPC', Rev: 1, Len: 240
+7:879  0:000    27. AFFA2000: 'FPDT', 'LGPC', Rev: 1, Len: 68
+7:879  0:000    28. AFFA1000: 'BGRT', 'LGPC', Rev: 1, Len: 56
+7:879  0:000    29. AFE16000: 'UEFI', 'LGPC', Rev: 1, Len: 298
+8:483  0:603  Found BIOS RSDP at F0140
+8:483  0:000  Printing ACPI tables from RSDP F0140 ...
+8:483  0:000   F0140: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36
+8:483  0:000    (Xsdt: AFFA8188, Rsdt: AFFA80C4)
+8:483  0:000    AFFA8188: 'XSDT', 'LGPC', Rev: 1, Len: 276
+8:483  0:000    AFFA80C4: 'RSDT', 'LGPC', Rev: 1, Len: 156
+8:483  0:000    Tables in Xsdt: 30
+8:483  0:000    0. AFFE0000: 'FACP', 'LGPC', Rev: 5, Len: 268
+8:483  0:000        (Dsdt: AFFB4000, Facs: AFE1B000, XDsdt: AFFB4000, XFacs: 0)
+8:483  0:000        AFFB4000: 'DSDT', 'LGPC', Rev: 2, Len: 167230
+8:486  0:002        AFE1B000: 'FACS', Ver: 2, Len: 64
+8:486  0:000    1. AFFF7000: 'SSDT', 'XnSsdt', Rev: 2, Len: 16677
+8:486  0:000    2. AFFF6000: 'SSDT', 'Ther_Xnt', Rev: 2, Len: 1299
+8:486  0:000    3. AFFF1000: 'SSDT', 'FwiTable', Rev: 1, Len: 20064
+8:486  0:000    4. AFFE8000: 'SSDT', 'DptfTabl', Rev: 2, Len: 34423
+8:486  0:000    5. AFFE7000: 'SSDT', 'Tpm2Tabl', Rev: 2, Len: 1219
+8:486  0:000    6. AFFE6000: 'SSDT', 'MeSsdt', Rev: 2, Len: 70
+8:486  0:000    7. AFFE5000: 'TPM2', 'LGPC', Rev: 4, Len: 52
+8:486  0:000    8. AFE30000: 'UEFI', 'LGPC', Rev: 1, Len: 66
+8:486  0:000    9. AFFE1000: 'SSDT', 'SaSsdt', Rev: 2, Len: 12560
+8:486  0:000    10. AFFDF000: 'HPET', 'LGPC', Rev: 1, Len: 56
+8:486  0:000    11. AFFDE000: 'APIC', 'LGPC', Rev: 3, Len: 300
+8:486  0:000    12. AFFDD000: 'MCFG', 'LGPC', Rev: 1, Len: 60
+8:486  0:000    13. AFFB3000: 'SSDT', 'xh_rvp07', Rev: 2, Len: 3790
+8:486  0:000    14. AFFB2000: 'BOOT', 'LGPC', Rev: 1, Len: 40
+8:486  0:000    15. AFFB1000: 'BATB', 'LGPC', Rev: 2, Len: 74
+8:486  0:000    16. AFFAF000: 'PMCT', 'LGPC', Rev: 1, Len: 82
+8:486  0:000    17. AFFAD000: 'SSDT', 'CpuSsdt', Rev: 2, Len: 6062
+8:486  0:000    18. AFFAB000: 'SSDT', 'UsbCTabl', Rev: 2, Len: 4249
+8:486  0:000    19. AFFAA000: 'LPIT', 'LGPC', Rev: 1, Len: 148
+8:486  0:000    20. AFFA9000: 'WSMT', 'LGPC', Rev: 1, Len: 40
+8:486  0:000    21. AFFFC000: 'SSDT', 'HdaDsp', Rev: 2, Len: 321
+8:486  0:000    22. AFFA7000: 'SSDT', 'TbtTypeC', Rev: 2, Len: 1303
+8:486  0:000    23. AFFA6000: 'DBGP', 'LGPC', Rev: 1, Len: 52
+8:486  0:000    24. AFFA5000: 'DBG2', 'LGPC', Rev: 0, Len: 84
+8:486  0:000    25. AFFA4000: 'MSDM', 'LGPC', Rev: 3, Len: 85
+8:486  0:000    26. AFFA3000: 'DMAR', 'LGPC', Rev: 1, Len: 240
+8:486  0:000    27. AFFA2000: 'FPDT', 'LGPC', Rev: 1, Len: 68
+8:486  0:000    28. AFFA1000: 'BGRT', 'LGPC', Rev: 1, Len: 56
+8:486  0:000    29. AFE16000: 'UEFI', 'LGPC', Rev: 1, Len: 298
+8:486  0:000    Tables in Rsdt: 30
+8:486  0:000    0. AFFE0000: 'FACP', 'LGPC', Rev: 5, Len: 268
+8:486  0:000        (Dsdt: AFFB4000, Facs: AFE1B000, XDsdt: AFFB4000, XFacs: 0)
+8:486  0:000        AFFB4000: 'DSDT', 'LGPC', Rev: 2, Len: 167230
+8:489  0:002        AFE1B000: 'FACS', Ver: 2, Len: 64
+8:489  0:000    1. AFFF7000: 'SSDT', 'XnSsdt', Rev: 2, Len: 16677
+8:489  0:000    2. AFFF6000: 'SSDT', 'Ther_Xnt', Rev: 2, Len: 1299
+8:489  0:000    3. AFFF1000: 'SSDT', 'FwiTable', Rev: 1, Len: 20064
+8:489  0:000    4. AFFE8000: 'SSDT', 'DptfTabl', Rev: 2, Len: 34423
+8:489  0:000    5. AFFE7000: 'SSDT', 'Tpm2Tabl', Rev: 2, Len: 1219
+8:489  0:000    6. AFFE6000: 'SSDT', 'MeSsdt', Rev: 2, Len: 70
+8:489  0:000    7. AFFE5000: 'TPM2', 'LGPC', Rev: 4, Len: 52
+8:489  0:000    8. AFE30000: 'UEFI', 'LGPC', Rev: 1, Len: 66
+8:489  0:000    9. AFFE1000: 'SSDT', 'SaSsdt', Rev: 2, Len: 12560
+8:489  0:000    10. AFFDF000: 'HPET', 'LGPC', Rev: 1, Len: 56
+8:489  0:000    11. AFFDE000: 'APIC', 'LGPC', Rev: 3, Len: 300
+8:489  0:000    12. AFFDD000: 'MCFG', 'LGPC', Rev: 1, Len: 60
+8:489  0:000    13. AFFB3000: 'SSDT', 'xh_rvp07', Rev: 2, Len: 3790
+8:489  0:000    14. AFFB2000: 'BOOT', 'LGPC', Rev: 1, Len: 40
+8:489  0:000    15. AFFB1000: 'BATB', 'LGPC', Rev: 2, Len: 74
+8:489  0:000    16. AFFAF000: 'PMCT', 'LGPC', Rev: 1, Len: 82
+8:489  0:000    17. AFFAD000: 'SSDT', 'CpuSsdt', Rev: 2, Len: 6062
+8:489  0:000    18. AFFAB000: 'SSDT', 'UsbCTabl', Rev: 2, Len: 4249
+8:489  0:000    19. AFFAA000: 'LPIT', 'LGPC', Rev: 1, Len: 148
+8:489  0:000    20. AFFA9000: 'WSMT', 'LGPC', Rev: 1, Len: 40
+8:489  0:000    21. AFFFC000: 'SSDT', 'HdaDsp', Rev: 2, Len: 321
+8:489  0:000    22. AFFA7000: 'SSDT', 'TbtTypeC', Rev: 2, Len: 1303
+8:489  0:000    23. AFFA6000: 'DBGP', 'LGPC', Rev: 1, Len: 52
+8:489  0:000    24. AFFA5000: 'DBG2', 'LGPC', Rev: 0, Len: 84
+8:489  0:000    25. AFFA4000: 'MSDM', 'LGPC', Rev: 3, Len: 85
+8:489  0:000    26. AFFA3000: 'DMAR', 'LGPC', Rev: 1, Len: 240
+8:489  0:000    27. AFFA2000: 'FPDT', 'LGPC', Rev: 1, Len: 68
+8:489  0:000    28. AFFA1000: 'BGRT', 'LGPC', Rev: 1, Len: 56
+8:489  0:000    29. AFE16000: 'UEFI', 'LGPC', Rev: 1, Len: 298
+8:489  0:000  Found UEFI Acpi 2.0 RSDP at AFFFD014
+8:489  0:000  Saving ACPI tables from RSDP AFFFD014 to EFI\CLOVER\ACPI\origin ...
+8:489  0:000   AFFFD014: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36 -> RSDP.aml
+8:496  0:007    (Xsdt: AFFA8188, Rsdt: AFFA80C4)
+8:496  0:000    AFFA8188: 'XSDT', 'LGPC', Rev: 1, Len: 276 -> XSDT.aml
+8:503  0:007    AFFA80C4: 'RSDT', 'LGPC', Rev: 1, Len: 156 -> RSDT.aml
+8:510  0:006    Tables in Xsdt: 30
+8:510  0:000    0. AFFE0000: 'FACP', 'LGPC', Rev: 5, Len: 268 -> FACP.aml
+8:517  0:006        (Dsdt: AFFB4000, Facs: AFE1B000, XDsdt: AFFB4000, XFacs: 0)
+8:517  0:000        AFFB4000: 'DSDT', 'LGPC', Rev: 2, Len: 167230 -> DSDT.aml
+8:528  0:010        AFE1B000: 'FACS', Ver: 2, Len: 64 -> FACS.aml
+8:535  0:006    1. AFFF7000: 'SSDT', 'XnSsdt', Rev: 2, Len: 16677 -> SSDT-0-XnSsdt.aml
+8:542  0:007    2. AFFF6000: 'SSDT', 'Ther_Xnt', Rev: 2, Len: 1299 -> SSDT-1-Ther_Xnt.aml
+8:549  0:006    3. AFFF1000: 'SSDT', 'FwiTable', Rev: 1, Len: 20064 -> SSDT-2-FwiTable.aml
+8:556  0:007    4. AFFE8000: 'SSDT', 'DptfTabl', Rev: 2, Len: 34423 -> SSDT-3-DptfTabl.aml
+8:564  0:008    5. AFFE7000: 'SSDT', 'Tpm2Tabl', Rev: 2, Len: 1219 -> SSDT-4-Tpm2Tabl.aml
+8:571  0:007    6. AFFE6000: 'SSDT', 'MeSsdt', Rev: 2, Len: 70 -> SSDT-5-MeSsdt.aml
+8:578  0:006    7. AFFE5000: 'TPM2', 'LGPC', Rev: 4, Len: 52 -> TPM2.aml
+8:585  0:006    8. AFE30000: 'UEFI', 'LGPC', Rev: 1, Len: 66 -> UEFI.aml
+8:592  0:007    9. AFFE1000: 'SSDT', 'SaSsdt', Rev: 2, Len: 12560 -> SSDT-6-SaSsdt.aml
+8:600  0:007    10. AFFDF000: 'HPET', 'LGPC', Rev: 1, Len: 56 -> HPET.aml
+8:608  0:008    11. AFFDE000: 'APIC', 'LGPC', Rev: 3, Len: 300 -> APIC.aml
+8:615  0:007    12. AFFDD000: 'MCFG', 'LGPC', Rev: 1, Len: 60 -> MCFG.aml
+8:622  0:006    13. AFFB3000: 'SSDT', 'xh_rvp07', Rev: 2, Len: 3790 -> SSDT-7-xh_rvp07.aml
+8:628  0:006    14. AFFB2000: 'BOOT', 'LGPC', Rev: 1, Len: 40 -> BOOT.aml
+8:635  0:006    15. AFFB1000: 'BATB', 'LGPC', Rev: 2, Len: 74 -> BATB.aml
+8:642  0:007    16. AFFAF000: 'PMCT', 'LGPC', Rev: 1, Len: 82 -> PMCT.aml
+8:650  0:007    17. AFFAD000: 'SSDT', 'CpuSsdt', Rev: 2, Len: 6062 -> SSDT-8-CpuSsdt.aml (Found hidden SSDT 7 pcs)
+8:656  0:006        * AFDF0098: 'SSDT', 'Cpu0Ist', Rev: 2, Len: 1419  53 53 44 54 8B 05 00 00 02 63 50 6D 52 65 66 00 Internal length = 1419 -> SSDT-x8_0-Cpu0Ist.aml
+8:663  0:006        * AFD86018: 'SSDT', 'ApIst', Rev: 2, Len: 3348  53 53 44 54 14 0D 00 00 02 2A 50 6D 52 65 66 00 Internal length = 3348 -> SSDT-x8_1-ApIst.aml
+8:670  0:007        * AFD87698: 'SSDT', 'Cpu0Cst', Rev: 2, Len: 1272  53 53 44 54 F8 04 00 00 02 B9 50 6D 52 65 66 00 Internal length = 1272 -> SSDT-x8_2-Cpu0Cst.aml
+8:677  0:006        * AFDF0B18: 'SSDT', 'ApCst', Rev: 2, Len: 778  53 53 44 54 0A 03 00 00 02 93 50 6D 52 65 66 00 Internal length = 778 -> SSDT-x8_3-ApCst.aml
+8:685  0:007        * AFDF0718: 'SSDT', 'Cpu0Hwp', Rev: 2, Len: 186  53 53 44 54 BA 00 00 00 02 7D 50 6D 52 65 66 00 
+8:685  0:000        * AFD85018: 'SSDT', 'ApHwp', Rev: 2, Len: 791  53 53 44 54 17 03 00 00 02 80 50 6D 52 65 66 00 
+8:685  0:000        * AFD87018: 'SSDT', 'HwpLvt', Rev: 2, Len: 1576  53 53 44 54 28 06 00 00 02 85 50 6D 52 65 66 00 Internal length = 1576 -> SSDT-x8_4-HwpLvt.aml
+8:690  0:004  
+8:690  0:000    18. AFFAB000: 'SSDT', 'UsbCTabl', Rev: 2, Len: 4249 -> SSDT-9-UsbCTabl.aml
+8:697  0:006    19. AFFAA000: 'LPIT', 'LGPC', Rev: 1, Len: 148 -> LPIT.aml
+8:704  0:006    20. AFFA9000: 'WSMT', 'LGPC', Rev: 1, Len: 40 -> WSMT.aml
+8:710  0:006    21. AFFFC000: 'SSDT', 'HdaDsp', Rev: 2, Len: 321 -> SSDT-10-HdaDsp.aml
+8:717  0:006    22. AFFA7000: 'SSDT', 'TbtTypeC', Rev: 2, Len: 1303 -> SSDT-11-TbtTypeC.aml
+8:725  0:007    23. AFFA6000: 'DBGP', 'LGPC', Rev: 1, Len: 52 -> DBGP.aml
+8:732  0:006    24. AFFA5000: 'DBG2', 'LGPC', Rev: 0, Len: 84 -> DBG2.aml
+8:739  0:006    25. AFFA4000: 'MSDM', 'LGPC', Rev: 3, Len: 85 -> MSDM.aml
+8:746  0:006    26. AFFA3000: 'DMAR', 'LGPC', Rev: 1, Len: 240 -> DMAR.aml
+8:753  0:006    27. AFFA2000: 'FPDT', 'LGPC', Rev: 1, Len: 68 -> FPDT.aml
+8:760  0:007    28. AFFA1000: 'BGRT', 'LGPC', Rev: 1, Len: 56 -> BGRT.aml
+8:767  0:006    29. AFE16000: 'UEFI', 'LGPC', Rev: 1, Len: 298 -> UEFI.aml
+8:774  0:007    Tables in Rsdt: 30
+8:774  0:000    0. AFFE0000: 'FACP', 'LGPC', Rev: 5, Len: 268 -> RSDT-FACP.aml
+8:779  0:005        (Dsdt: AFFB4000, Facs: AFE1B000, XDsdt: AFFB4000, XFacs: 0)
+8:779  0:000        AFFB4000: 'DSDT', 'LGPC', Rev: 2, Len: 167230 -> RSDT-DSDT.aml
+8:787  0:008        AFE1B000: 'FACS', Ver: 2, Len: 64
+8:787  0:000    1. AFFF7000: 'SSDT', 'XnSsdt', Rev: 2, Len: 16677
+8:787  0:000    2. AFFF6000: 'SSDT', 'Ther_Xnt', Rev: 2, Len: 1299
+8:787  0:000    3. AFFF1000: 'SSDT', 'FwiTable', Rev: 1, Len: 20064
+8:787  0:000    4. AFFE8000: 'SSDT', 'DptfTabl', Rev: 2, Len: 34423
+8:787  0:000    5. AFFE7000: 'SSDT', 'Tpm2Tabl', Rev: 2, Len: 1219
+8:787  0:000    6. AFFE6000: 'SSDT', 'MeSsdt', Rev: 2, Len: 70
+8:787  0:000    7. AFFE5000: 'TPM2', 'LGPC', Rev: 4, Len: 52
+8:787  0:000    8. AFE30000: 'UEFI', 'LGPC', Rev: 1, Len: 66
+8:787  0:000    9. AFFE1000: 'SSDT', 'SaSsdt', Rev: 2, Len: 12560
+8:787  0:000    10. AFFDF000: 'HPET', 'LGPC', Rev: 1, Len: 56
+8:787  0:000    11. AFFDE000: 'APIC', 'LGPC', Rev: 3, Len: 300
+8:787  0:000    12. AFFDD000: 'MCFG', 'LGPC', Rev: 1, Len: 60
+8:787  0:000    13. AFFB3000: 'SSDT', 'xh_rvp07', Rev: 2, Len: 3790
+8:787  0:000    14. AFFB2000: 'BOOT', 'LGPC', Rev: 1, Len: 40
+8:787  0:000    15. AFFB1000: 'BATB', 'LGPC', Rev: 2, Len: 74
+8:787  0:000    16. AFFAF000: 'PMCT', 'LGPC', Rev: 1, Len: 82
+8:787  0:000    17. AFFAD000: 'SSDT', 'CpuSsdt', Rev: 2, Len: 6062
+8:787  0:000    18. AFFAB000: 'SSDT', 'UsbCTabl', Rev: 2, Len: 4249
+8:787  0:000    19. AFFAA000: 'LPIT', 'LGPC', Rev: 1, Len: 148
+8:787  0:000    20. AFFA9000: 'WSMT', 'LGPC', Rev: 1, Len: 40
+8:787  0:000    21. AFFFC000: 'SSDT', 'HdaDsp', Rev: 2, Len: 321
+8:787  0:000    22. AFFA7000: 'SSDT', 'TbtTypeC', Rev: 2, Len: 1303
+8:787  0:000    23. AFFA6000: 'DBGP', 'LGPC', Rev: 1, Len: 52
+8:787  0:000    24. AFFA5000: 'DBG2', 'LGPC', Rev: 0, Len: 84
+8:787  0:000    25. AFFA4000: 'MSDM', 'LGPC', Rev: 3, Len: 85
+8:787  0:000    26. AFFA3000: 'DMAR', 'LGPC', Rev: 1, Len: 240
+8:787  0:000    27. AFFA2000: 'FPDT', 'LGPC', Rev: 1, Len: 68
+8:787  0:000    28. AFFA1000: 'BGRT', 'LGPC', Rev: 1, Len: 56
+8:787  0:000    29. AFE16000: 'UEFI', 'LGPC', Rev: 1, Len: 298
+8:787  0:000  Found UEFI Acpi 1.0 RSDP at AFFFD000
+8:787  0:000  Printing ACPI tables from RSDP AFFFD000 ...
+8:787  0:000   AFFFD000: 'RSD PTR ', Rev: 0 (Acpi 1.0), Len: 20
+8:787  0:000    (Rsdt: AFFA8000)
+8:787  0:000    AFFA8000: 'RSDT', 'LGPC', Rev: 1, Len: 156
+8:787  0:000    Tables in Rsdt: 30
+8:787  0:000    0. AFFE0000: 'FACP', 'LGPC', Rev: 5, Len: 268
+8:787  0:000        (Dsdt: AFFB4000, Facs: AFE1B000, XDsdt: AFFB4000, XFacs: 0)
+8:787  0:000        AFFB4000: 'DSDT', 'LGPC', Rev: 2, Len: 167230
+8:790  0:002        AFE1B000: 'FACS', Ver: 2, Len: 64
+8:790  0:000    1. AFFF7000: 'SSDT', 'XnSsdt', Rev: 2, Len: 16677
+8:790  0:000    2. AFFF6000: 'SSDT', 'Ther_Xnt', Rev: 2, Len: 1299
+8:790  0:000    3. AFFF1000: 'SSDT', 'FwiTable', Rev: 1, Len: 20064
+8:790  0:000    4. AFFE8000: 'SSDT', 'DptfTabl', Rev: 2, Len: 34423
+8:790  0:000    5. AFFE7000: 'SSDT', 'Tpm2Tabl', Rev: 2, Len: 1219
+8:790  0:000    6. AFFE6000: 'SSDT', 'MeSsdt', Rev: 2, Len: 70
+8:790  0:000    7. AFFE5000: 'TPM2', 'LGPC', Rev: 4, Len: 52
+8:790  0:000    8. AFE30000: 'UEFI', 'LGPC', Rev: 1, Len: 66
+8:790  0:000    9. AFFE1000: 'SSDT', 'SaSsdt', Rev: 2, Len: 12560
+8:790  0:000    10. AFFDF000: 'HPET', 'LGPC', Rev: 1, Len: 56
+8:790  0:000    11. AFFDE000: 'APIC', 'LGPC', Rev: 3, Len: 300
+8:790  0:000    12. AFFDD000: 'MCFG', 'LGPC', Rev: 1, Len: 60
+8:790  0:000    13. AFFB3000: 'SSDT', 'xh_rvp07', Rev: 2, Len: 3790
+8:790  0:000    14. AFFB2000: 'BOOT', 'LGPC', Rev: 1, Len: 40
+8:790  0:000    15. AFFB1000: 'BATB', 'LGPC', Rev: 2, Len: 74
+8:790  0:000    16. AFFAF000: 'PMCT', 'LGPC', Rev: 1, Len: 82
+8:790  0:000    17. AFFAD000: 'SSDT', 'CpuSsdt', Rev: 2, Len: 6062
+8:790  0:000    18. AFFAB000: 'SSDT', 'UsbCTabl', Rev: 2, Len: 4249
+8:790  0:000    19. AFFAA000: 'LPIT', 'LGPC', Rev: 1, Len: 148
+8:790  0:000    20. AFFA9000: 'WSMT', 'LGPC', Rev: 1, Len: 40
+8:790  0:000    21. AFFFC000: 'SSDT', 'HdaDsp', Rev: 2, Len: 321
+8:790  0:000    22. AFFA7000: 'SSDT', 'TbtTypeC', Rev: 2, Len: 1303
+8:790  0:000    23. AFFA6000: 'DBGP', 'LGPC', Rev: 1, Len: 52
+8:790  0:000    24. AFFA5000: 'DBG2', 'LGPC', Rev: 0, Len: 84
+8:790  0:000    25. AFFA4000: 'MSDM', 'LGPC', Rev: 3, Len: 85
+8:790  0:000    26. AFFA3000: 'DMAR', 'LGPC', Rev: 1, Len: 240
+8:790  0:000    27. AFFA2000: 'FPDT', 'LGPC', Rev: 1, Len: 68
+8:790  0:000    28. AFFA1000: 'BGRT', 'LGPC', Rev: 1, Len: 56
+8:790  0:000    29. AFE16000: 'UEFI', 'LGPC', Rev: 1, Len: 298
