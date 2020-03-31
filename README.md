@@ -23,7 +23,7 @@ Hackintosh MacOS on LG Gram13 Z990
 
 ## 驱动完善
 
-- [x] 显卡：不是7代也不是8代好尴尬，仿冒id：0x3EA50009
+- [x] 显卡：不是7代也不是8代好尴尬，仿冒id：0x3EA50004
   - HDMI输出正常；
   - 快捷键F2、F3调节亮度；
   - hidpi用one-key-hidpi，GitHub搜一下即有；（1080屏幕开不开其实差别也不大）
