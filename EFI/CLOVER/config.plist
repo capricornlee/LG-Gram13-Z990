@@ -21,11 +21,11 @@
 				<key>FixHPET</key>
 				<false/>
 				<key>FixIPIC</key>
-				<true/>
-				<key>FixRTC</key>
-				<true/>
-				<key>FixRegions</key>
 				<false/>
+				<key>FixRTC</key>
+				<false/>
+				<key>FixRegions</key>
+				<true/>
 				<key>FixSBUS</key>
 				<false/>
 				<key>FixShutdown</key>
@@ -47,13 +47,13 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>change OSID to XSID (to avoid match against _OSI XOSI patch)</string>
+					<string>Rename H_EC to EC (USB Power)</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>T1NJRA==</data>
+					<data>SF9FQw==</data>
 					<key>Replace</key>
-					<data>WFNJRA==</data>
+					<data>RUNfXw==</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -64,56 +64,6 @@
 					<data>X09TSQ==</data>
 					<key>Replace</key>
 					<data>WE9TSQ==</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change _DSM to XDSM</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>X0RTTQ==</data>
-					<key>Replace</key>
-					<data>WERTTQ==</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change HECI to IMEI</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>SEVDSQ==</data>
-					<key>Replace</key>
-					<data>SU1FSQ==</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change MEI to IMEI</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>TUVJXw==</data>
-					<key>Replace</key>
-					<data>SU1FSQ==</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change GFX0 to IGPU</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>R0ZYMA==</data>
-					<key>Replace</key>
-					<data>SUdQVQ==</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>Rename H_EC to EC (USB Power)</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>SF9FQw==</data>
-					<key>Replace</key>
-					<data>RUNfXw==</data>
 				</dict>
 			</array>
 		</dict>
@@ -133,7 +83,7 @@
 		<key>#DefaultVolume</key>
 		<string>LastBootedVolume</string>
 		<key>Arguments</key>
-		<string>dart=0 slide=0 darkwake=8 brcmfx-country=#a -disablegfxfirmware</string>
+		<string>dart=0 brcmfx-country=#a darkwake=0</string>
 		<key>DefaultVolume</key>
 		<string>LastBootedVolume</string>
 		<key>HibernationFixup</key>
@@ -160,9 +110,9 @@
 			<key>AFGLowPowerState</key>
 			<true/>
 			<key>Inject</key>
-			<integer>21</integer>
+			<string>No</string>
 			<key>ResetHDA</key>
-			<true/>
+			<false/>
 		</dict>
 		<key>Inject</key>
 		<false/>
@@ -173,14 +123,27 @@
 				<key>compatible</key>
 				<string>pci8086,9d84</string>
 			</dict>
-			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
+			<key>PciRoot(0x0)/Pci(0x1f,0x3)</key>
 			<dict>
-				<key>AAPL,GfxYTile</key>
-				<data>AQAAAA==</data>
-				<key>AAPL,ig-platform-id</key>
-				<data>CQClPg==</data>
 				<key>AAPL,slot-name</key>
 				<string>Internal</string>
+				<key>device_type</key>
+				<string>Audio device</string>
+				<key>hda-gfx</key>
+				<string>onboard-1</string>
+				<key>hda-idle-support</key>
+				<data>AQAAAA==</data>
+				<key>layout-id</key>
+				<integer>21</integer>
+				<key>model</key>
+				<string>Sunrise Point-LP HD Audio</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
+			<dict>
+				<key>AAPL,ig-platform-id</key>
+				<data>BAClPg==</data>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,2,0</string>
 				<key>device-id</key>
 				<data>pT4AAA==</data>
 				<key>device_type</key>
@@ -189,26 +152,22 @@
 				<data>AQAAAA==</data>
 				<key>enable-lspcon-support</key>
 				<data>AQAAAA==</data>
-				<key>framebuffer-con0-alldata</key>
-				<data>AAAIAAIAAACYAAAA</data>
-				<key>framebuffer-con0-enable</key>
-				<integer>1</integer>
-				<key>framebuffer-con1-alldata</key>
-				<data>AQEJAAAIAADHAQAA</data>
+				<key>force-online</key>
+				<data>AQAAAA==</data>
 				<key>framebuffer-con1-enable</key>
-				<integer>1</integer>
+				<data>AQAAAA==</data>
 				<key>framebuffer-con1-has-lspcon</key>
 				<data>AQAAAA==</data>
-				<key>framebuffer-con1-preferred-lspcon-mode</key>
+				<key>framebuffer-con1-preferredplspcon-mode</key>
 				<data>AQAAAA==</data>
-				<key>framebuffer-con2-alldata</key>
-				<data>AgYKAAAIAADHAQAA</data>
-				<key>framebuffer-con2-enable</key>
-				<integer>0</integer>
+				<key>framebuffer-con1-type</key>
+				<data>AAgAAA==</data>
+				<key>framebuffer-cursormem</key>
+				<data>AACQAA==</data>
 				<key>framebuffer-fbmem</key>
 				<data>AACQAA==</data>
 				<key>framebuffer-flags</key>
-				<data>CgujAA==</data>
+				<data>CgvjAA==</data>
 				<key>framebuffer-patch-enable</key>
 				<data>AQAAAA==</data>
 				<key>framebuffer-stolenmem</key>
@@ -282,14 +241,14 @@
 			<key>Legacy</key>
 			<false/>
 			<key>Linux</key>
-			<false/>
+			<true/>
 			<key>Tool</key>
-			<false/>
+			<true/>
 		</dict>
 		<key>ScreenResolution</key>
 		<string>1920x1080</string>
 		<key>Theme</key>
-		<string>bluemac</string>
+		<string>Bootcamp2k</string>
 	</dict>
 	<key>Graphics</key>
 	<dict>
@@ -313,6 +272,8 @@
 		<array>
 			<string>\System\Library\Extensions\IONetworkingFamily.kext</string>
 		</array>
+		<key>KernelLapic</key>
+		<false/>
 		<key>KernelPm</key>
 		<true/>
 		<key>KernelToPatch</key>
@@ -327,60 +288,22 @@
 				<key>Replace</key>
 				<data>ILniAAAAkJA=</data>
 			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Disable panic kext logging on 10.13 release kernel (credit vit9696)</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>igKEwHRE</data>
-				<key>MatchOS</key>
-				<string>10.13.x</string>
-				<key>Replace</key>
-				<data>igKEwOtE</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Disable panic kext logging on 10.14 release kernel (credit vit9696)</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>igKEwHRC</data>
-				<key>MatchOS</key>
-				<string>10.14.x</string>
-				<key>Replace</key>
-				<data>igKEwOtC</data>
-			</dict>
 		</array>
 		<key>KextsToPatch</key>
 		<array>
 			<dict>
 				<key>Comment</key>
-				<string>USB port limit patch #1 10.15.x modify by DalianSky(credit ydeng)</string>
+				<string>Enable TRIM for SSD</string>
 				<key>Disabled</key>
-				<false/>
+				<true/>
 				<key>Find</key>
-				<data>g/sPDw==</data>
+				<data>AEFQUExFIFNTRAA=</data>
 				<key>InfoPlistPatch</key>
 				<false/>
 				<key>Name</key>
-				<string>com.apple.iokit.IOUSBHostFamily</string>
+				<string>com.apple.iokit.IOAHCIBlockStorage</string>
 				<key>Replace</key>
-				<data>g/s/Dw==</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>USB Port limit patch #2 10.15.x modify by DalianSky</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>g/kPDw==</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>Name</key>
-				<string>com.apple.driver.usb.AppleUSBXHCI</string>
-				<key>Replace</key>
-				<data>g/k/Dw==</data>
+				<data>AAAAAAAAAAAAAAA=</data>
 			</dict>
 		</array>
 	</dict>
@@ -390,23 +313,19 @@
 		<string>0x28</string>
 		<key>CsrActiveConfig</key>
 		<string>0x67</string>
-		<key>ROM</key>
-		<data>rm4scXq+</data>
 	</dict>
 	<key>SMBIOS</key>
 	<dict>
 		<key>BiosReleaseDate</key>
-		<string>11/08/2019</string>
+		<string>01/05/2020</string>
 		<key>BiosVendor</key>
 		<string>Apple Inc.</string>
 		<key>BiosVersion</key>
-		<string></string>
+		<string>MBP152.88Z.F000.B00.2001052154</string>
 		<key>Board-ID</key>
-		<string></string>
+		<string>Mac-827FB448E656EC26</string>
 		<key>BoardManufacturer</key>
 		<string>Apple Inc.</string>
-		<key>BoardSerialNumber</key>
-		<string></string>
 		<key>BoardType</key>
 		<integer>10</integer>
 		<key>BoardVersion</key>
@@ -418,34 +337,35 @@
 		<key>ChassisType</key>
 		<string>0x09</string>
 		<key>EfiVersion</key>
-		<string>1037.60.55.0.0</string>
+		<string>1037.80.41.0.0</string>
 		<key>Family</key>
 		<string>MacBook Pro</string>
 		<key>FirmwareFeatures</key>
-		<string></string>
+		<string>0xFC0FE137</string>
 		<key>FirmwareFeaturesMask</key>
-		<string></string>
+		<string>0xFF1FFF3F</string>
 		<key>LocationInChassis</key>
 		<string>Part Component</string>
 		<key>Manufacturer</key>
 		<string>Apple Inc.</string>
+		<key>Memory</key>
+		<dict>
+			<key>Channels</key>
+			<integer>2</integer>
+			<key>SlotCount</key>
+			<integer>2</integer>
+		</dict>
 		<key>Mobile</key>
 		<true/>
 		<key>PlatformFeature</key>
 		<string>0x02</string>
 		<key>ProductName</key>
-		<string>MacBookPro15,4</string>
-		<key>SerialNumber</key>
-		<string></string>
-		<key>SmUUID</key>
-		<string></string>
+		<string>MacBookPro15,2</string>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>
 	<key>SystemParameters</key>
 	<dict>
-		<key>CustomUUID</key>
-		<string></string>
 		<key>InjectKexts</key>
 		<string>Detect</string>
 	</dict>

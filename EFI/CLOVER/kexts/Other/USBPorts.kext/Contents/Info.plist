@@ -22,7 +22,7 @@
 	<string>1.0</string>
 	<key>IOKitPersonalities</key>
 	<dict>
-		<key>MacBookPro15,4-XHC</key>
+		<key>MacBookPro15,2-XHC</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
 			<string>com.apple.driver.AppleUSBMergeNub</string>
@@ -81,7 +81,7 @@
 					<key>SS01</key>
 					<dict>
 						<key>UsbConnector</key>
-						<integer>9</integer>
+						<integer>3</integer>
 						<key>port</key>
 						<data>
 						DQAAAA==
@@ -99,9 +99,9 @@
 				</dict>
 			</dict>
 			<key>model</key>
-			<string>MacBookPro15,4</string>
+			<string>MacBookPro15,2</string>
 		</dict>
-		<key>MacBookPro15,4-XHC2</key>
+		<key>MacBookPro15,2-XHC2</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
 			<string>com.apple.driver.AppleUSBMergeNub</string>
@@ -142,7 +142,7 @@
 				</dict>
 			</dict>
 			<key>model</key>
-			<string>MacBookPro15,4</string>
+			<string>MacBookPro15,2</string>
 		</dict>
 	</dict>
 	<key>OSBundleRequired</key>
