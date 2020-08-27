@@ -27,6 +27,14 @@ oc：[https://github.com/suzuke/LG-Gram-13z980-Opencore](https://github.com/suzu
 
 刚开始尝试用别人做好的EFI发现并不适合Z990，只能自己重新折腾。
 
+## 更新 
+
+### 8-27
+
+- 修复电池电量信息，充电状态、电量值等都正确显示
+- 去掉内存插槽数设置
+- 经测试Z大的intel网卡驱动能够使用，最近用原生WiFi协议的驱动也能用，但网速较低自行衡量需求
+
 ## 驱动完善
 
 - [x] 显卡：不是7代也不是8代好尴尬，仿冒id：0x3EA50004
@@ -43,7 +51,7 @@ oc：[https://github.com/suzuke/LG-Gram-13z980-Opencore](https://github.com/suzu
 - [x] 网卡：Intel的不折腾，装BCM免驱卡，买m.2 Mkey转接卡占用一个硬盘口
 
 - [x] 电池：正常显示电量，提取DSDT修改，参考RehabMan大神的教程
-  - 不满电状态下刚插上充电器会显示100%，一会就恢复正常数值，不影响使用后期再完善；
+  - ~~不满电状态下刚插上充电器会显示100%，一会就恢复正常数值，不影响使用后期再完善；~~
   - 电池用量正常，合上盖子一晚0耗电；
   - 电源管理正常，休眠唤醒正常；
   
@@ -60,7 +68,7 @@ oc：[https://github.com/suzuke/LG-Gram-13z980-Opencore](https://github.com/suzu
 
 - [x] 雷电3：能驱动，不过没有设备测试热插拔，平时只用来充电
 
-- [x] USB：Gram14应该可以直接使用，如果是Gram15、17的需要自行定制（因为我不用Intel蓝牙所以屏蔽了该端口）
+- [x] USB：最好自行定制一下USB端口~~Gram14应该可以直接使用，如果是Gram15、17的需要自行定制（因为我不用Intel蓝牙所以屏蔽了该端口）~~
 
 ## 未解决
 
@@ -82,14 +90,6 @@ oc：[https://github.com/suzuke/LG-Gram-13z980-Opencore](https://github.com/suzu
 ==这里需要配合定制USB口，屏蔽了原本intel蓝牙的usb端口，然后bcm的蓝牙就正常使用==
 
 ![fly](pic/WX-BT4-01.png)
-
-
-
-还有最近很多修改bios设置解锁CFG和DVMT的方法，听说是为了开启原生电源管理与输出4K的问题。
-
-我的bios是W1ZD1250，官网下载的，试了一下RU.efi修改不了，可能bios锁了不允许修改，有空再尝试其他方法。
-
-bios的值找出来了，如果有朋友能修改到希望分享一下方法。
 
 CFG Lock：0x3E  值：1 -> 0
 
